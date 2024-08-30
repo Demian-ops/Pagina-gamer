@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.infoins{
+    color: #0f0;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background: linear-gradient(145deg, #00949e, #ff00ff);
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a i {
+    margin-right: 8px;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+nav {
+    background: #111;
+    border-bottom: 15px solid #111;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 10px 25px;
+}
+
+nav ul li a {
+    color: rgb(0, 38, 255);
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid rgb(0, 38, 255);
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px #000;
+}
+
+nav ul li a:hover {
+    background-color: rgb(0, 38, 255);
+    color: #113;
+    border-color: #111;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7)
+}
+
+div {
+    padding: 20px;
+    margin: 20px auto;
+    background: #112;
+    border-radius: 8px;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    animation: mover 2s ease-in-out infinite alternate;
+}
+
+h2 {
+    color: #0ff;
+    text-shadow: 1px 1px 2px #000;
+}
+
+p {
+    color: #0f0;
+    line-height: 1.6;
+}
+
+@keyframes mover {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+.neon-footer {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #111;
+    border-top: 2px solid #111;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.neon-footer h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 24px;
+    color: #fff;
+    text-shadow: 
+        0 0 5px #00ffff,
+        0 0 10px #00ffff,
+        0 0 20px #00ffff,
+        0 0 40px #00ffff,
+        0 0 80px #00ffff,
+        0 0 90px #00ffff,
+        0 0 100px #00ffff,
+        0 0 150px #00ffff;
+        animation: flicker 2.5s infinite alternate;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info p {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+    color: #fff;
+    text-shadow: 
+        0 0 5px #ff00ff,
+        0 0 10px #ff00ff,
+        0 0 20px #ff00ff,
+        0 0 40px #ff00ff;
+}
+
+.contact-info a {
+    color: #ff00ff;
+    text-decoration: none;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.contact-info a:hover {
+    color: #fff;
+    text-shadow: 
+        0 0 10px #ff00ff,
+        0 0 20px #ff00ff,
+        0 0 30px #ff00ff;
+}
+
+@keyframes flicker {
+    0% {
+        text-shadow: 
+            0 0 5px #00ffff,
+            0 0 10px #00ffff,
+            0 0 20px #00ffff,
+            0 0 40px #00ffff,
+            0 0 80px #00ffff,
+            0 0 90px #00ffff,
+            0 0 100px #00ffff,
+            0 0 150px #00ffff;
+    }
+    50% {
+        text-shadow: 
+            0 0 5px #00ffff,
+            0 0 10px #00ffff,
+            0 0 20px #00ffff,
+            0 0 40px #00ffff,
+            0 0 30px #00ffff,
+            0 0 40px #00ffff,
+            0 0 50px #00ffff,
+            0 0 60px #00ffff;
+    }
+    100% {
+        text-shadow: 
+            0 0 5px #00ffff,
+            0 0 10px #00ffff,
+            0 0 20px #00ffff,
+            0 0 40px #00ffff,
+            0 0 80px #00ffff,
+            0 0 90px #00ffff,
+            0 0 100px #00ffff,
+            0 0 150px #00ffff;
+    }
+}
+
+@media (max-width: 360px) {
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
+
+        nav ul li a {
+        display: block;
+        margin: 0;
+        padding: 12px;
+        font-size: 18px;
+        border: none;
+    }
+
+    nav ul li a:hover {
+        background-color: #0f0;
+        color: #111;
+        border-color: #111;
+        box-shadow: none;
+    }
+}
