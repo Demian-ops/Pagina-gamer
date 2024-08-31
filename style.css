@@ -3,6 +3,27 @@
 .infoins{
     color: #0f0;
 }
+.card-content {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-gif {
+    position: absolute;
+    left: 0;
+    top: 60%;
+    transform: translateY(-50%);
+}
+
+.mate{
+    height: 430px;
+    position: absolute;
+    right: 0;
+    top: 60%;
+    transform: translateY(-50%);
+    }
 
 body {
     font-family: 'Press Start 2P', cursive;
@@ -42,8 +63,8 @@ nav ul li a {
     color: rgb(0, 38, 255);
     text-decoration: none;
     padding: 10px 20px;
-    border: 1px solid rgb(0, 38, 255);
-    border-radius: 5px;
+    border: 1px solid rgb(25, 33, 83);
+    border-radius: 10px;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;
     font-size: 15px;
     font-weight: bold;
@@ -51,10 +72,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: rgb(0, 38, 255);
+    background-color: rgb(46, 0, 252);
     color: #113;
     border-color: #111;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7)
+}
+
+.subrallado{
+    text-decoration: none;
 }
 
 div {
@@ -64,7 +89,27 @@ div {
     border-radius: 8px;
     max-width: 800px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    animation: mover 2s ease-in-out infinite alternate;
+}
+
+.imagen-elevacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+}
+
+.stardew{
+    height: 190px;
+}
+
+.imagen-elevacion {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.imagen-elevacion:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
@@ -73,17 +118,8 @@ h2 {
 }
 
 p {
-    color: #0f0;
+    color: #0f1;
     line-height: 1.6;
-}
-
-@keyframes mover {
-    from {
-        transform: translateY(0);
-    }
-    to {
-        transform: translateY(-10px);
-    }
 }
 
 .neon-footer {
@@ -119,26 +155,11 @@ p {
 .contact-info p {
     font-family: 'Press Start 2P', cursive;
     font-size: 16px;
-    color: #fff;
-    text-shadow: 
-        0 0 5px #ff00ff,
-        0 0 10px #ff00ff,
-        0 0 20px #ff00ff,
-        0 0 40px #ff00ff;
+    color:rgb(112, 18, 219)
 }
 
-.contact-info a {
-    color: #ff00ff;
-    text-decoration: none;
-    transition: color 0.3s, text-shadow 0.3s;
-}
-
-.contact-info a:hover {
-    color: #fff;
-    text-shadow: 
-        0 0 10px #ff00ff,
-        0 0 20px #ff00ff,
-        0 0 30px #ff00ff;
+.telefono{
+    color:rgb(112, 18, 219)
 }
 
 @keyframes flicker {
@@ -200,5 +221,18 @@ p {
         color: #111;
         border-color: #111;
         box-shadow: none;
+    }
+}
+
+
+@media screen and (max-width: 360px) and (max-height: 740px) {
+    .card-gif {
+    display: none;
+    }
+}
+
+@media screen and (max-width: 360px) and (max-height: 740px) {
+.mate{
+    display: none;
     }
 }
