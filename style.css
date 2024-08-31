@@ -72,7 +72,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: rgb(46, 0, 252);
+    background-color: rgb(32, 10, 201);
     color: #113;
     border-color: #111;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7)
@@ -135,7 +135,7 @@ p {
 .neon-footer h2 {
     font-family: 'Press Start 2P', cursive;
     font-size: 24px;
-    color: #fff;
+    color: #ffffff;
     text-shadow: 
         0 0 5px #00ffff,
         0 0 10px #00ffff,
@@ -152,10 +152,13 @@ p {
     margin-top: 20px;
 }
 
+.gmail{
+    color: #0f1;
+}
 .contact-info p {
     font-family: 'Press Start 2P', cursive;
     font-size: 16px;
-    color:rgb(112, 18, 219)
+    color:rgb(255, 255, 255)
 }
 
 .telefono{
@@ -171,8 +174,6 @@ p {
             0 0 40px #00ffff,
             0 0 80px #00ffff,
             0 0 90px #00ffff,
-            0 0 100px #00ffff,
-            0 0 150px #00ffff;
     }
     50% {
         text-shadow: 
@@ -182,8 +183,6 @@ p {
             0 0 40px #00ffff,
             0 0 30px #00ffff,
             0 0 40px #00ffff,
-            0 0 50px #00ffff,
-            0 0 60px #00ffff;
     }
     100% {
         text-shadow: 
@@ -193,8 +192,6 @@ p {
             0 0 40px #00ffff,
             0 0 80px #00ffff,
             0 0 90px #00ffff,
-            0 0 100px #00ffff,
-            0 0 150px #00ffff;
     }
 }
 
@@ -231,7 +228,46 @@ p {
     }
 }
 
-@media screen and (max-width: 360px) and (max-height: 740px) {
+@media screen and (max-width: 360px) and (max-height: 740px){
+.mate{
+    display: none;
+    }
+}
+
+@media screen and (max-width: 390px){
+
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
+
+        nav ul li a {
+        display: block;
+        margin: 5px;
+        padding: 12px;
+        font-size: 18px;
+        border: none;
+    }
+
+    nav ul li a:hover {
+        background-color: #0f0;
+        color: #111;
+        border-color: #111;
+        box-shadow: none;
+    }
+}
+
+@media screen and (max-width: 390px) and (max-height: 844px) {
+    .card-gif {
+    display: none;
+    }
+}
+
+@media screen and (max-width: 390px) and (max-height: 844px){
 .mate{
     display: none;
     }
