@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-.infoins{
-    color: #0f0;
-}
 .card-content {
     text-decoration: none;
     display: flex;
@@ -17,13 +14,15 @@
     transform: translateY(-50%);
 }
 
-.mate{
+.mate {
+    overflow-y: auto;
     height: 430px;
     position: absolute;
     right: 0;
     top: 60%;
     transform: translateY(-50%);
-    }
+}
+
 
 body {
     font-family: 'Press Start 2P', cursive;
@@ -118,7 +117,7 @@ h2 {
 }
 
 p {
-    color: #0f1;
+    color: #0f0;
     line-height: 1.6;
 }
 
@@ -153,8 +152,9 @@ p {
 }
 
 .gmail{
-    color: #0f1;
+    color: #ff00ff
 }
+
 .contact-info p {
     font-family: 'Press Start 2P', cursive;
     font-size: 16px;
@@ -192,6 +192,45 @@ p {
             0 0 40px #00ffff,
             0 0 80px #00ffff,
             0 0 90px #00ffff,
+    }
+}
+
+.infoins{
+    list-style-type: none;
+    padding-left: 0;
+    color: #0f0;
+}
+
+.instalacion{
+    padding-bottom: 3%;
+}
+.Disfruta{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        animation: movimiento 2s ease-in-out infinite, cambioColor 1.5s ease-in-out infinite;
+        color: rgb(204, 0, 255);
+    }
+    @keyframes cambioColor {
+        0% {
+            color: rgb(204, 0, 255);
+        }
+        50% {
+            color: rgb(0, 255, 0);
+        }
+        100% {
+            color: rgb(255, 0, 0);
+        }
+    }
+
+@keyframes movimiento {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
 
